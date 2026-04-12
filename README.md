@@ -46,8 +46,8 @@ ur_ws/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/ur5-perception-tsdf-reconstruction.git
-cd ur5-perception-tsdf-reconstruction
+https://github.com/manohargandhig/ur_ws.git
+cd ~/ur_ws
 ```
 
 ---

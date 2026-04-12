@@ -43,6 +43,51 @@ ur_ws/
 
 ## ⚙️ Setup Instructions
 
+## ⚙️ System Requirements & Prerequisites
+
+### 🖥️ System Requirements
+
+* Ubuntu 22.04
+* ROS2 Humble Distribution
+* Python 3.10
+
+---
+
+### 🤖 ROS2 Installation
+
+```bash
+sudo apt update
+sudo apt install ros-humble-desktop -y
+```
+
+Initialize ROS2 environment:
+
+```bash
+source /opt/ros/humble/setup.bash
+```
+
+---
+
+### 🦾 UR5 + MoveIt + Gazebo Dependencies
+
+```bash
+sudo apt install ros-humble-moveit -y
+sudo apt install ros-humble-gazebo-ros-pkgs -y
+sudo apt install ros-humble-ros2-control -y
+sudo apt install ros-humble-ros2-controllers -y
+```
+
+---
+
+### 📷 OpenCV & Python Dependencies
+
+```bash
+pip install numpy scipy opencv-python pyzmq scikit-image matplotlib Pillow
+```
+
+---
+
+
 ### Clone Repository
 
 ```bash

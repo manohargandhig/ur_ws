@@ -30,6 +30,7 @@ Built on:
 
 ## 📂 Project Structure
 
+---
 ur_ws/
 ├── src/                     # ROS2 packages
 ├── scripts/                # Helper scripts
@@ -51,7 +52,7 @@ cd ur5-perception-tsdf-reconstruction
 
 ---
 
-# 🧪 Semantic Segmentation + Pose Estimation
+#  Semantic Segmentation + Pose Estimation
 
 ### Terminal 1
 

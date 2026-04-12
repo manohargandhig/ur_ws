@@ -114,7 +114,8 @@ https://github.com/manohargandhig/tsdf-conda-env.git
 ### Terminal 1
 
 ```bash
-source /opt/ros/humble/setup.bash 
+source /opt/ros/humble/setup.bash
+cd ~
 cd ~/ur_ws
 colcon build --symlink-install
 source install/setup.bash
@@ -148,6 +149,6 @@ ros2 run opencv tsdf_gazebo_node \
 
 ## 👨‍💻 Authors
 
-G Manohar Gandhi
-Aswin Kumar M S
-S Sai Sankalp
+* G Manohar Gandhi
+* Aswin Kumar M S
+* S Sai Sankalp

@@ -30,15 +30,15 @@ Built on:
 
 ## 📂 Project Structure
 
----
+```
 ur_ws/
 ├── src/                     # ROS2 packages
-├── scripts/                # Helper scripts
+├── scripts/                 # Helper scripts
 │   ├── tf_publisher.py
 │   ├── maskrcnn_zmq_inference.py
 ├── README.md
 ├── .gitignore
-
+```
 ---
 
 ## ⚙️ Setup Instructions

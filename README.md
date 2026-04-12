@@ -30,28 +30,74 @@ Built on:
 
 ## 📂 Project Structure
 
+```
 ur_ws/
 ├── src/                     # ROS2 packages
-├── scripts/                # Helper scripts
+├── scripts/                 # Helper scripts
 │   ├── tf_publisher.py
 │   ├── maskrcnn_zmq_inference.py
 ├── README.md
 ├── .gitignore
-
+```
 ---
 
 ## ⚙️ Setup Instructions
 
-### Clone Repository
+## ⚙️ System Requirements & Prerequisites
+
+### 🖥️ System Requirements
+
+* Ubuntu 22.04
+* ROS2 Humble Distribution
+* Python 3.10
+
+---
+
+### 🤖 ROS2 Installation
 
 ```bash
-git clone https://github.com/<your-username>/ur5-perception-tsdf-reconstruction.git
-cd ur5-perception-tsdf-reconstruction
+sudo apt update
+sudo apt install ros-humble-desktop -y
+```
+
+Initialize ROS2 environment:
+
+```bash
+source /opt/ros/humble/setup.bash
 ```
 
 ---
 
-# 🧪 Semantic Segmentation + Pose Estimation
+### 🦾 UR5 + MoveIt + Gazebo Dependencies
+
+```bash
+sudo apt install ros-humble-moveit -y
+sudo apt install ros-humble-gazebo-ros-pkgs -y
+sudo apt install ros-humble-ros2-control -y
+sudo apt install ros-humble-ros2-controllers -y
+```
+
+---
+
+### 📷 OpenCV & Python Dependencies
+
+```bash
+pip install numpy scipy opencv-python pyzmq scikit-image matplotlib Pillow
+```
+
+---
+
+
+### Clone Repository
+
+```bash
+https://github.com/manohargandhig/ur_ws.git
+cd ~/ur_ws
+```
+
+---
+
+#  Semantic Segmentation + Pose Estimation
 
 ### Terminal 1
 
@@ -114,7 +160,8 @@ https://github.com/manohargandhig/tsdf-conda-env.git
 ### Terminal 1
 
 ```bash
-source /opt/ros/humble/setup.bash 
+source /opt/ros/humble/setup.bash
+cd ~
 cd ~/ur_ws
 colcon build --symlink-install
 source install/setup.bash
@@ -148,6 +195,6 @@ ros2 run opencv tsdf_gazebo_node \
 
 ## 👨‍💻 Authors
 
-G Manohar Gandhi
-Aswin Kumar M S
-S Sai Sankalp
+* G Manohar Gandhi
+* Aswin Kumar M S
+* S Sai Sankalp

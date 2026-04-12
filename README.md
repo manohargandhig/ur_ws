@@ -192,6 +192,20 @@ ros2 run opencv tsdf_gazebo_node \
 ```
 
 ---
+---
+
+## 🎥 Demo Videos
+
+### 1. Mask R-CNN Pose Estimation (Simulation)
+[▶️ Watch Video](docs/demo_videos/segmentation_demo.mp4)
+
+### 2. TSDF Volumetric Reconstruction
+[▶️ Watch Video](docs/demo_videos/tsdf_reconstruction.mp4)
+
+### 3. Real-Time Pre-Grasp using Mask R-CNN + AprilTag
+[▶️ Watch Video](docs/demo_videos/pregrasp_demo.mp4)
+
+---
 
 ## 👨‍💻 Authors
 

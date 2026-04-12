@@ -36,6 +36,9 @@ ur_ws/
 ├── scripts/                 # Helper scripts
 │   ├── tf_publisher.py
 │   ├── maskrcnn_zmq_inference.py
+├── docs/                    # Documentation assets
+│   ├── images/              # Images (results, graphs, pipeline)
+│   ├── demo_videos/         # Demo videos (optional if stored locally)
 ├── README.md
 ├── .gitignore
 ```

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="Stapler">
+
+    <!-- Dynamic object -->
+    <static>false</static>
+
+    <link name="link">
+
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+
+      <!-- Inertia for small stapler -->
+      <inertial>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <iyy>0.0006</iyy>
+          <izz>0.0007</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <!-- VISUAL -->
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Stapler/meshes/Stapler.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <cast_shadows>true</cast_shadows>
+      </visual>
+
+      <!-- COLLISION (Using Mesh Instead of Box) -->
+      <collision name="collision">
+
+        <geometry>
+          <mesh>
+            <uri>model://Stapler/meshes/Stapler.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+
+          <friction>
+            <ode>
+              <mu>1.2</mu>
+              <mu2>1.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+
+      </collision>
+
+    </link>
+
+  </model>
+</sdf>

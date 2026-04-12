@@ -1,0 +1,17 @@
+# ROS2
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Conda
+.env
+
+# IDE
+.vscode/
+
+# System
+.DS_Store

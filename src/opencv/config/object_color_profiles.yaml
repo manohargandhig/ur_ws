@@ -1,0 +1,81 @@
+# HSV Color Profiles for ur_sim objects
+# Format: [H_min, S_min, V_min, H_max, S_max, V_max]
+# H: 0-179, S: 0-255, V: 0-255 (OpenCV convention)
+#
+# To tune these values run:
+#   ros2 run opencv hsv_tuner --ros-args -p object_name:=green_cube
+
+objects:
+
+  green_cube:
+    # Bright green Gazebo material
+    hsv_lower: [35, 100, 50]
+    hsv_upper: [85, 255, 255]
+    gazebo_model_name: "green_cube"
+    gazebo_link_name: "link_1"
+    min_area: 500
+    grasp_z_offset: 0.02       # metres above detected surface
+    pregrasp_z_offset: 0.15    # approach height above object
+
+  calculator:
+    # Typically dark grey/black in Gazebo
+    hsv_lower: [0, 0, 20]
+    hsv_upper: [180, 60, 100]
+    gazebo_model_name: "calculator"
+    gazebo_link_name: "link_1"
+    min_area: 800
+    grasp_z_offset: 0.02
+    pregrasp_z_offset: 0.15
+
+  mini_stacking_box:
+    # Usually blue/navy Gazebo material
+    hsv_lower: [100, 80, 50]
+    hsv_upper: [140, 255, 255]
+    gazebo_model_name: "mini_stacking_box"
+    gazebo_link_name: "link_1"
+    min_area: 400
+    grasp_z_offset: 0.02
+    pregrasp_z_offset: 0.15
+
+  mouse:
+    # Dark grey/black mouse shape
+    hsv_lower: [0, 0, 15]
+    hsv_upper: [180, 50, 90]
+    gazebo_model_name: "mouse"
+    gazebo_link_name: "link_1"
+    min_area: 700
+    grasp_z_offset: 0.02
+    pregrasp_z_offset: 0.15
+
+  scissor:
+    # Metallic silver / grey
+    hsv_lower: [0, 0, 100]
+    hsv_upper: [180, 50, 220]
+    gazebo_model_name: "scissor"
+    gazebo_link_name: "link_1"
+    min_area: 300
+    grasp_z_offset: 0.02
+    pregrasp_z_offset: 0.15
+
+  Stapler:
+    # Usually red or black stapler in Gazebo
+    hsv_lower: [0, 100, 50]
+    hsv_upper: [15, 255, 255]
+    gazebo_model_name: "Stapler"
+    gazebo_link_name: "link_1"
+    min_area: 600
+    grasp_z_offset: 0.02
+    pregrasp_z_offset: 0.15
+
+# Camera & frame config
+camera:
+  color_topic: "/camera/image_raw"
+  depth_topic: "/camera/depth/image_raw"
+  camera_info_topic: "/camera/camera_info"
+  optical_frame: "camera_optical_link"
+  base_frame: "base_link"
+
+# Gripper geometry (used for grasp orientation)
+gripper:
+  approach_axis: "z"        # gripper Z points into object (top-down)
+  finger_offset: 0.005      # small offset so fingers clear object top

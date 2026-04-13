@@ -12,8 +12,8 @@ This project implements a complete robotic perception pipeline using:
 Built on:
 
 * ROS2 Humble (Ubuntu 22.04)
-* Nvidia A4000 Workstation
-* CUDA 12.4
+* GPU: NVIDIA RTX A4000
+* CUDA: 12.4
 * OpenCV + ZMQ
 * Mask R-CNN
 * Open3D

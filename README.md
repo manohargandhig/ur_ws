@@ -1,4 +1,4 @@
-# UR5 Robotic Perception + TSDF Reconstruction (ROS2 Humble)
+# Semantic-Weighted Volumetric Fusion for Accurate Spatial Perception in Robotic Bin Picking
 
 ## 📌 Overview
 
@@ -12,6 +12,8 @@ This project implements a complete robotic perception pipeline using:
 Built on:
 
 * ROS2 Humble (Ubuntu 22.04)
+* Nvidia A4000 Workstation
+* CUDA 12.4
 * OpenCV + ZMQ
 * Mask R-CNN
 * Open3D

@@ -125,6 +125,14 @@ ros2 run opencv zmq_camera_pub
 
 ---
 
+## Required Environment
+
+Refer:
+https://github.com/manohargandhig/mask-rcnn-conda-training.git
+
+---
+
+
 ### Terminal 3
 
 ```bash
